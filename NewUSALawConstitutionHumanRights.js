@@ -25,7 +25,8 @@ Class NewUSALawConstitutionHumanRights() {
         if(this.isHonorable()&&!this.analyzeEvents(explanations)){
             return this.loophole(explanations);
         }else{
-            return (new OldBoringUSAConstitutionEvolvedSince1787(events)).startTrial(explanations);
+            (new OldBoringUSAConstitutionEvolvedSince1787(events)).startTrial(explanations);
+            return false;
         }
 
     }
@@ -82,10 +83,6 @@ Class NewUSALawConstitutionHumanRights() {
     }
 
     analyzeEvents(explanations){
-        //TODO
-    }
-
-    startTrial(){
         //TODO
     }
 
