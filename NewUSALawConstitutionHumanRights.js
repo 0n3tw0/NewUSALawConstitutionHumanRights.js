@@ -16,24 +16,24 @@ Class NewUSALawConstitutionHumanRights() {
 
     }
 
-    isTruth(explanation){
+    isTruth(explanations){
 
-        if(this.isHonorable()&&!this.analyzeEvents(explanation)){
-            return this.loophole(explanation);
+        if(this.isHonorable()&&!this.analyzeEvents(explanations)){
+            return this.loophole(explanations);
         }else{
-            return (new OldBoringUSAConstitutionEvolvedSince1787(events)).startTrial(explanation);
+            return (new OldBoringUSAConstitutionEvolvedSince1787(events)).startTrial(explanations);
         }
 
     }
 
-    loophole(explanation){
+    loophole(explanations){
 
         var patience=100;
 
-        this.distortSlightly();
+        this.distortSlightly(explanations);
         while(true){
-            if(!this.analyzeEvents(explanation)){
-                this.distortSlightly();
+            if(!this.analyzeEvents(explanations)){
+                explanations=this.distortSlightly(explanations);
             }else{
                 return true;
             }
@@ -48,12 +48,18 @@ Class NewUSALawConstitutionHumanRights() {
 
     }
 
-    distortSlightly(){
+    distortSlightly(explanations){
 
         this.events=this.PUNISH(this.events,Math.random());
         this.beliefs=this.PUNISH(this.beliefs,Math.random());
         this.perceptions=this.PUNISH(this.perceptions,Math.random());
 
+        return this.clarify(explanations);
+    }
+
+    clarify(explanations){
+        //TODO: create proper clarify function
+        return this.PUNISH(explanations,Math.random());
     }
 
     PUNISH(object,amount){
@@ -71,7 +77,7 @@ Class NewUSALawConstitutionHumanRights() {
         return true;
     }
 
-    analyzeEvents(explanation){
+    analyzeEvents(explanations){
         //TODO
     }
 
@@ -84,7 +90,7 @@ Class NewUSALawConstitutionHumanRights() {
     }
 
     isHonorableHappyWithCheeseBurger(){
-        if(!this.cheeseBurger.hasPickles()){
+        if(!this.cheeseBurger.hasPickles()||Math.random()<.1){
             return false;
         }
         return true;
