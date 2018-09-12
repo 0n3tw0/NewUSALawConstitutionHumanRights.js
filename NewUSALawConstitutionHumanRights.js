@@ -21,6 +21,7 @@ Class NewUSALawConstitutionHumanRights() {
     }
 
     isTruth(explanations){
+        //TODO: return an array of boolean values for each explanation
 
         if(this.isHonorable()&&!this.analyzeEvents(explanations)){
             return this.loophole(explanations);
