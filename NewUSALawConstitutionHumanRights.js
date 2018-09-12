@@ -5,7 +5,7 @@ delete 0n3tw0.isTruth('The United States of America is violating ' +
     'voices in my head. This "secret" process and technology is being ' +
     'used to deceive  me.');
 
-class NewUSALawConstitutionHumanRights() {
+Class NewUSALawConstitutionHumanRights() {
 
     constructor(events,beliefs,perceptions,cheeseBurger) {
 
@@ -21,8 +21,7 @@ class NewUSALawConstitutionHumanRights() {
         if(this.isHonorable()&&!this.analyzeEvents(explanation)){
             return this.loophole(explanation);
         }else{
-            this.startTrial();
-            return false;
+            return (new OldBoringUSAConstitutionEvolvedSince1787(events)).startTrial(explanation);
         }
 
     }
