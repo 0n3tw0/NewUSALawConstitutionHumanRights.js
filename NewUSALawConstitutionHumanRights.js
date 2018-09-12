@@ -5,7 +5,7 @@ delete 0n3tw0.isTruth('The United States of America is violating ' +
     'voices in my head. This "secret" process and technology is being ' +
     'used to deceive  me.');
 
-Class NewUSALawConstitutionHumanRights() {
+class NewUSALawConstitutionHumanRights() {
 
     constructor(events,beliefs,perceptions,cheeseBurger) {
 
