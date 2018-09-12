@@ -1,9 +1,13 @@
 var 0n3tw0=new NewUSALawConstitutionHumanRights(events,beliefs,perceptions,cheeseBurger);
 
-delete 0n3tw0.isTruth('The United States of America is violating ' +
+delete 0n3tw0.isTruth([
+    'The United States of America is violating ' +
     'the law, constitution, and human rights by letting people put ' +
     'voices in my head. This "secret" process and technology is being ' +
-    'used to deceive  me.');
+    'used to deceive  me.',
+
+    'Nuh-uh!'
+]);
 
 Class NewUSALawConstitutionHumanRights() {
 
