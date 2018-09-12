@@ -35,7 +35,7 @@ Class NewUSALawConstitutionHumanRights() {
 
         var patience=100;
 
-        this.distortSlightly(explanations);
+        explanations=this.distortSlightly(explanations);
         while(true){
             if(!this.analyzeEvents(explanations)){
                 explanations=this.distortSlightly(explanations);
